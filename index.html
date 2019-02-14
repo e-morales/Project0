@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>Enrique Morales</title>
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/styles.css"></link>
+    </head>
+
+    <body>
+<!---------------HEADER---------------------------------------->
+      <header>
+
+        <div id="hero">
+          <div class='image-over'>
+            <div class="center">
+              <h1><span class='swap '>Enrique</span></h1>
+              <h2><span id='portfolio'> <span id='plus'>+</span> Portfolio</span></h2>
+            </div>
+          </div>
+        </div>
+<!---------------NAV---------------------------------------->
+        <nav id='navbar' class='absolute transition'>
+          <span class="navbar-toggle" id="js-navbar-toggle">
+            <i class="fas fa-bars"></i>
+          </span>
+          <ul class='main-nav' id='js-menu'>
+            <li><a href="#about"> About </a></li>
+            <li><a href="#testimonials"> Testimonials </a></li>
+            <li><a href="#skills"> Skills </a></li>
+            <li><a href="#work"> Work </a></li>
+            <li><a href="#form"> Contact </a></li>
+          </ul>
+        </nav>
+<!---------------END OF NAV---------------------------------------->
+      </header>
+<!---------------TESTIMONIALS---------------------------------------->
+      <section>
+        <h1 class='swap title shrink' id='about'>About</h1>
+        <div class="about-section">
+          <p> This is a little about me. </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+
+        <h1 id='testimonials' class='testimonials-font swap title shrink'>Homage</h1>
+        <ul id="slides2">
+          <li class="slide2 showing2"><quote>"Great guy."</quote><p style="color:white">- Bezos</p></li>
+          <li class="slide2"><quote>"Total Inspiration."</quote><p style="color:white">- Elon</p></li>
+          <li class="slide2"><quote>"Wouldn't have done it without him."</quote><p style="color:white">- Bill</p></li>
+        </ul>
+<!-------------SKILLS---------------------------------------->
+        <h2 id="skills" class="swap title shrink">Skills</h2>
+        <article class="col-3">
+          <div class="post">
+              <!-- <img src="#"> -->
+              <h3>HTML</h3>
+              <button type="submit" class="read-more">Examples</button>
+          </div>
+
+          <div class="post">
+              <!-- <img src="#"> -->
+              <h3>CSS</h3>
+              <button type="submit" class="read-more">Examples</button>
+          </div>
+
+          <div class="post">
+              <!-- <img src="#"> -->
+              <h3>JavaScript</h3>
+              <button type="submit" class="read-more">Examples</button>
+          </div>
+        </article>
+<!---------------CAROUSEL---------------------------------------->
+        <h2 id="work" class="title swap shrink">Work</h2>
+        <article>
+          <ul id="slides" class='border'>
+              <li class="slide showing"></li>
+              <li class="slide"></li>
+              <li class="slide"></li>
+          </ul>
+          <button class="controls" id="previous">&lt;</button>
+          <button class="controls" id="next">&gt;</button>
+        </article>
+<!---------------FORM---------------------------------------->
+        <h2 id="contact" class="contact-font title swap shrink"> Get in Touch</h2>
+        <form id="form" class="flex-form">
+            <div class="form">
+                <input type="text" placeholder="Full Name">
+                <input type="email" placeholder="Email">
+                <input type="text" placeholder="Subject">
+            </div>
+            <div class="column-flex">
+                <textarea placeholder="Message"></textarea>
+                <button class ="form-button" type="submit">Submit</button>
+            </div>
+        </form>
+<!---------------FOOTER---------------------------------------->
+        <footer>
+            <div class="social">
+              <p>
+                <a href="#"><i class="fab fa-twitter-square"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-facebook-square"></i></a>
+              </p>
+            </div>
+            <p>© 2018 Enrique Morales</p>
+        </footer>
+      </section>
+<!---------------JAVASCRIPT---------------------------------------->
+      <script src="main.js"></script>
+    </body>
+</html>

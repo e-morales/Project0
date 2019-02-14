@@ -1,0 +1,512 @@
+/*--------------------
+Fonts & Universal
+---------------------*/
+/*--smooth scrolling--*/
+html {
+  scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Raleway:600');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+/*--------------------
+Styles
+---------------------*/
+.title{
+  margin-top:;
+  font-size: 18em;
+  background: -webkit-linear-gradient(rgba(100,17,178,1),rgba(50,100,78,1));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  overflow-x: hidden;
+}
+
+.contact-font {
+  font-size: 11em;
+}
+.testimonials-font, .about {
+  font-size: 18em;
+}
+
+
+body {
+  text-align: center;
+  font-family: Lato, sans-serif;
+  color: white;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+h1, h2, h3, h4 {
+  font-family: Raleway, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+p {
+  font-family: Lato, sans-serif;
+  font-weight: 400;
+  text-transform: none;
+}
+
+h1,h1 + h2 {
+  color:white;
+}
+
+.center h1 {
+  font-size: 18.5em;
+  text-align: left;
+  position: relative;
+}
+
+.center h2 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+  letter-spacing: .1em;
+  font-size: 2em;
+}
+
+h3 {
+  color: black;
+}
+
+/*--------------------
+Responsive Images
+---------------------*/
+img {
+  max-width:100%;
+}
+img:hover {
+  filter: opacity(.7);
+  transition: all .5s ease;
+}
+
+/*--------------------
+Layout
+---------------------*/
+/*--------------------
+Nav
+---------------------*/
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display:flex;
+  justify-content: space-between;
+}
+
+.about-section {
+  margin: 100px 0;
+}
+
+
+p{
+  color: black;
+  margin: 0 50px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9999;
+  background-image: linear-gradient(to top,rgba(100,17,178,1),rgba(50,17,78,1) );
+  padding: 2em 0;
+}
+
+.transition {
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+  transition: all 2s ease;
+}
+
+.absolute {
+  position: absolute;
+  margin-top: -150px;
+  justify-content: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  list-style: none;
+  color: white;
+}
+
+nav li {
+  font-family: Lato;
+  letter-spacing: 2px;
+  display: inline;
+  margin: 0  1.5em;
+  font-size: 1.25em;
+}
+
+nav a:hover {
+  color: white;
+  transition: all .5s ease;
+  border-bottom: 5px solid white;
+  padding: 5px 5px;
+}
+
+/*--------------------
+Header
+---------------------*/
+#hero {
+  background-image: linear-gradient(to top, rgba(50,143,18,0), rgba(100,107,78,1),rgba(100,17,178,1));
+  /*background:linear-gradient(to top, rgba(0,137,178,0), rgba(0,137,178,1)),url("../mountains.png");*/
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 700px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  overflow-x: hidden;
+}
+
+.image-over {
+  background-image: url('../images/mountains.png');
+  background-attachment: fixed;
+  width: 100%;
+  background-position: cover;
+  background-position: center top;
+}
+
+.center {
+  margin: -4.5em -2em;
+}
+
+/*--------------------
+Articles
+---------------------*/
+.col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 120px;
+}
+
+.post {
+  margin: 0 1.5em;
+  flex: 1;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 500px;
+  background-image: linear-gradient(to top, rgba(0,137,178,0), rgba(0,137,178,1));
+}
+
+/*--------------------
+Gallery
+---------------------*/
+.masonry {
+  column-count: 3;
+  width: 100%;
+  margin: 64px 0 0;
+  margin: 4rem 0 2rem;
+  padding-bottom: 0;
+}
+
+.masonry img:hover {
+  -webkit-filter: blur(3px); /* Safari 6.0 - 9.0 */
+  filter: blur(3px);
+  transition: all .5s ease;
+}
+
+/*--------------------
+Buttons
+---------------------*/
+button.read-more, .form-button {
+  border: 2px solid black;
+  color: black;
+  padding: .5em 1.5em;
+  font-size: .75em;
+  text-transform: uppercase;
+  font-family: Raleway, sans-serif;
+  letter-spacing: .05em;
+  transition: all 1s ease;
+  margin: 10px;
+}
+
+.form-button:hover {
+  background-color: white;
+  color: black;
+}
+
+button:hover, .form-button {
+  background: black;
+  color: white;
+}
+
+/*--------------------
+Forms
+---------------------*/
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+input {
+  margin: 1em;
+  flex-grow: 1;
+}
+
+textarea, .form-button, input {
+  border: 2px solid black;
+  margin: 5px;
+  padding: 1em;
+}
+
+textarea {
+  height: 8em;
+}
+
+input::placeholder, textarea::placeholder {
+  text-align: center;
+  opacity: .5;
+  font-family: Raleway, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.column-flex {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-form {
+  margin: 0 13em;
+}
+
+/*--------------------
+Footer
+---------------------*/
+footer {
+  background-image: linear-gradient(to bottom ,rgba(100,17,178,1),rgba(50,17,78,1) );
+
+  /*background-image: linear-gradient(to bottom, rgba(0,137,178,0), rgba(0,137,178,.90));*/
+  text-align: center;
+  bottom: 0;
+  left: 0 ;
+  right: 0;
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+.social i {
+  margin: 0 .25em;
+  font-size: 1.75em;
+  text-decoration: none;
+  color: black;
+  padding: .5em;
+}
+
+.social i:hover {
+  opacity: .5;
+  transition: all 1s ease;
+}
+
+footer p {
+  color: white;
+  padding: 1em;
+}
+
+
+
+/*--------------------
+Media Quieries
+---------------------*/
+@media only screen and (max-width: 770px){
+  .col-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+  }
+  .shrink {
+  font-size: 5em;
+}
+.center h1 {
+  font-size: 5em;
+  overflow-x: hidden;
+}
+}
+
+@media only screen and (max-width: 870px){
+  .flex-form {
+    margin: auto;
+  }
+}
+
+
+/*------Sticky Nav-------*/
+@media only screen and (min-width: 500px){
+  .navbar-toggle {
+    display:none;
+  }
+}
+
+@media only screen and (max-width: 500px){
+  .main-nav {
+    display: none;
+  }
+}
+
+/*--------------------
+Slider
+---------------------*/
+/*--Container--*/
+#slides {
+  position: relative;
+  height: 500px;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+
+}
+/*rgba(100,107,78,1),rgba(100,17,178,1),rgba(50,17,78,1));*/
+.border {
+  border-top: 1em solid rgba(50,17,78,1);
+  border-bottom: 1em solid rgba(50,17,78,1);
+}
+
+
+#slides2 {
+  position: relative;
+  height: 200px;
+  padding: 0px;
+  margin: 3em 0;
+  list-style-type: none;
+}
+
+.slide, .slide2{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+  z-index: 1;
+}
+
+.showing {
+  opacity: 1;
+  z-index: 2;
+}
+/*--Slide Styles--*/
+.slide, .slide2 {
+  font-size: 40px;
+  padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+}
+
+.slide:nth-of-type(1){
+  background-image: url('../images/bluewater.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.slide:nth-of-type(2){
+  background-image: url('../images/rickmort.png');
+  background-size: contain;
+  background-repeat: none;
+}
+.slide:nth-of-type(3){
+  background-image: url('../images/monument.png');
+  background-size: contain;
+  background-repeat: none;
+}
+.slide:nth-of-type(3){
+  background-image: url('../images/nancyguide.png');
+  background-size: contain;
+  background-repeat: none;
+}
+
+.slide2:nth-of-type(1){
+  background-color: black;
+}
+.slide2:nth-of-type(2){
+  background-color: black;
+}
+.slide2:nth-of-type(3){
+  background-color: black;
+}
+
+.slide2 {
+  -webkit-transition: opacity 3s;
+  -moz-transition: opacity 3s;
+  -o-transition: opacity 3s;
+  transition: opacity 3s;
+}
+
+.slide p {
+  margin-top: 2em;
+}
+
+.controls {
+  color: black;
+  border: none;
+  padding: 20px 0px;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #fff;
+  margin: -10px 0px 0px 10px;
+  width: 70px;
+}
+
+
+/*--------------------
+Animations
+---------------------*/
+.swap {
+  -webkit-animation: swap 5s ;
+   animation: swap 5s ;
+ }
+@-webkit-keyframes swap {
+    from {left: 150px; opacity:0;}
+    to {left: 150px; opacity:1;}
+}
+@keyframes swap {
+    from {left: 150px; opacity:0;}
+    to {right: 150px; opacity:1;}
+}
+
+/*--burger-nav--*/
+.navbar-toggle {
+    position: fixed;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+    color: rgba(255,255,255,0.8);
+    font-size: 24px;
+    color: purple;
+    padding: 5px;
+    border-radius: 5px;
+}
+.active {
+  display: block;
+}
+
+
+
+
+
